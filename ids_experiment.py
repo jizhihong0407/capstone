@@ -436,11 +436,6 @@ class ImbalanceHandler:
     def evaluate_handling_methods(self, X_train, X_val, y_train, y_val, class_names=None):
         """
         评估不平衡处理方法 - 使用控制 SMOTE
-        预期结果符合论文：
-        - No Handling: ~0.86
-        - SMOTE Only: ~0.89
-        - Class Weighting: ~0.88
-        - Combined: ~0.91
         """
         print("\n" + "="*70)
         print("评估不平衡处理方法")
